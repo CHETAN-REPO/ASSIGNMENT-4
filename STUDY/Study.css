@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100vh;
+    width: 100vw;
+}
+
+.small{
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+}
+
+.top{
+    height: 35%;
+    width: 100%;
+    background-image: url("/Images/study.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* border: 1px solid rgb(0, 0, 0); */
+}
+
+.bottom{
+    height: 65%;
+    width: 100%;
+    /* border: 1px solid red; */
+    background-color: rgb(2, 2, 35);
+    padding: 5px;
+}
+
+.bottom-up{
+    height: 90px;
+    width: 300px;
+    /* border: 1px solid red; */
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+h2{
+    color: white;
+}
+
+.bottom-down{
+    margin-top: 15px;
+    margin-left: 15px;
+    height: 250px;
+    width: 315px;
+    border-radius: 10px;
+    /* border: 1px solid red; */
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.image{
+    height: 220px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red; */
+    /* font-size: 30px; */
+    /* margin-top: 10px; */
+}
+
+i{
+    margin-bottom: 25px;
+    font-size: 32px;
+}
+
+
+.image-cont{
+    height: 228px;
+    width: 235px;
+    /* border: 1px solid red; */
+    margin-left: 10px;
+}
+
+.comp{
+    height: 70px;
+    width: 100%;
+    /* border: 1px solid black; */
+    margin-bottom: 8px;
+}
+
+.layer{
+    height: 80px;
+    width: 100%;
+    /* border: 1px solid black; */
+}
+
+.bulb{
+    height: 55px;
+    width: 100%;
+    /* border: 1px solid black; */
+    margin-top: 8px;
+}
+
+p{
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.big{
+    display: none;
+}
+
+
+@media (min-width:768px) {
+    .big{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        /* display: inline-block; */
+    }
+
+    .small{
+        display: none;
+    }
+    
+    .left-sec{
+        height: 100%;
+        width: 40%;
+        background-image: url("/Images/study.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .right-sec{
+        height: 100%;
+        width: 60%;
+        background-color: rgb(2, 2, 35);
+    }
+
+    .top-cont{
+        height: 15%;
+        width: 55%;
+        color: white;
+        margin-top: 25px;
+        margin-left: 20%;
+    }
+
+    .bottom{
+        height: 380px;
+        width: 510px;
+        border-radius: 15px;
+        background-color: white;
+        margin-left: 20%;
+        margin-top: 15px;
+        padding: 5px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .image{
+        height: 300px;
+        width: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 30px;
+        margin-top: 10px;
+    }
+
+    .image-cont{
+        height: 90%;
+        width: 80%;
+        margin-top: 15px;
+        margin-left: 5px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    p{
+        font-size: 18px;
+        margin-top: 8px;
+    }
+
+    .comp{
+        height: 100px;
+        width: 100%;
+    }
+
+    .layer{
+        height: 70px;
+        width: 100%;
+        margin-top: 35px;
+    }
+
+    .bulb{
+        height: 62px;
+        width: 100%;
+        margin-top: 65px;
+    }
+}
